@@ -302,6 +302,11 @@ button{
   display: none;
 }
 
+.link{
+  color: #EB5757;
+  font-weight: bold;
+}
+
 @media screen and (max-width: 768px) {
   .nav-bar{
     display: grid;
