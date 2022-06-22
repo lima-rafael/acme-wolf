@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="17" viewBox="0 0 20 17">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Retângulo_23" data-name="Retângulo 23" width="20" height="17" transform="translate(1832 67)" fill="none" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+    <clipPath id="clip-path-2">
+      <rect id="Retângulo_8" data-name="Retângulo 8" width="31" height="17" transform="translate(1827 67)" fill="#fff" stroke="#fff" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="Grupo_de_máscara_8" data-name="Grupo de máscara 8" transform="translate(-1832 -67)" clip-path="url(#clip-path)">
+    <g id="Grupo_de_máscara_1" data-name="Grupo de máscara 1" transform="translate(-1)" clip-path="url(#clip-path-2)">
+      <path id="cart-shopping-solid" d="M3.188,0a.8.8,0,0,1,.784.648l.05.415H17.989a1.077,1.077,0,0,1,1.023,1.35L17.219,8.789a1.063,1.063,0,0,1-1.023.774H5.668l.305,1.594H16.2a.8.8,0,0,1,0,1.594H5.283a.793.793,0,0,1-.754-.647l-2-10.509H.8A.8.8,0,0,1,.8,0ZM4.25,15.406A1.594,1.594,0,1,1,5.844,17,1.594,1.594,0,0,1,4.25,15.406Zm12.75,0a1.594,1.594,0,1,1-1.594-1.594A1.594,1.594,0,0,1,17,15.406Z" transform="translate(1832.975 67)" fill="#fff"/>
+    </g>
+  </g>
+</svg>

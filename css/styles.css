@@ -1,0 +1,448 @@
+html{
+  font-size: 10px;
+}
+a,
+li,
+ul,
+h1,
+h2,
+p,
+body,
+button,
+blockquote{
+  margin: 0;
+  padding: 0;
+}
+
+a{
+  text-decoration: none;
+}
+
+li{
+  list-style: none;
+}
+
+body {
+  font-family: 'Sen', Georgia, serif;
+  color: #333;
+}
+
+h1{
+  font-size: 6.2rem;
+}
+
+h2{
+  font-size: 4rem;
+}
+
+p,
+a,
+button{
+  font-size: 1.8rem;
+}
+
+.btn{
+  background: none;
+  padding: 10px 50px;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 5px;
+  border: 2px solid #fff;
+  transition: 300ms ease;
+}
+
+.btn-header:hover{
+  background: #EB5757;
+  border: 2px solid #EB5757;
+}
+
+.body{
+  display: grid;
+}
+
+.nav-bar{
+  display: grid;
+  grid-template-columns: 1fr auto;
+  background: #EB5757;
+  align-items: center;
+  padding: 20px 50px;
+}
+
+.nav-bar ul{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.nav-bar ul a{
+  padding: 10px 20px;
+  display: block;
+  color: #fff;
+  border-radius: 5px;
+  transition: .3s ease;
+}
+
+.nav-bar ul a:hover{
+  background: rgba(0, 0, 0, .5);
+}
+
+.nav-bar ul li + li{
+  margin-left: 10px;
+}
+
+.nav-bar .shop{
+  background: #333333;
+  padding-bottom: 5px;
+}
+
+.header{
+  padding: 20px 0;
+  background: url('../images/backgrounds/back-001.png') top center no-repeat;
+  height: 839px;
+  align-items: center;
+  display: grid;
+}
+
+.grid{
+  width: 100%;
+  max-width: 960px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: auto;
+  color: #fff;
+}
+
+.grid .btn{
+  margin-top: 30px;
+}
+
+.contaier-after{
+  display: grid;
+  grid-template-columns: 1fr minmax(960px, 2fr) 1fr;
+  grid-template-areas: 
+    '... about-cards ...'
+    '... cards ...';
+  ;
+}
+
+.about-cards{
+  grid-area: about-cards;
+  display: grid;
+  grid-template-columns: 1fr minmax(450px, 1fr);
+  align-items: center;
+  padding: 30px 0;
+}
+
+.cards{
+  grid-area: cards;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.card{
+  width: 100%;
+  max-width: 310px;
+  height: 350px;
+  margin: 30px auto;
+  color: #fff;
+  border-radius: 5px;
+  display: grid;
+  grid-template-rows: 1fr 2fr;
+}
+
+.title{
+  text-align: center;
+}
+
+.pt-30{
+  padding-top: 30px;
+}
+
+.number{
+  padding: 20px 30px;
+}
+
+.card-1{
+  background: url('../images/backgrounds/back-003.svg') center no-repeat;
+}
+
+.card-2{
+  background: url('../images/backgrounds/back-004.svg') center no-repeat;
+}
+
+.card-3{
+  background: url('../images/backgrounds/back-005.svg') center no-repeat;
+}
+
+.fixed{ 
+  background: url('../images/backgrounds/back-002.png') center no-repeat;
+  background-size: cover;
+  display: grid;
+  height: 600px;
+  grid-template-columns: 2fr 2fr 1fr;
+  align-content: center;
+  grid-template-areas: 
+  '..fixed-content..';
+}
+
+.fixed-content{
+  color: #fff;
+  grid-area: fixed-content;
+  text-align: right;
+}
+
+.fixed-content button{
+  border-radius: 5px;
+  background: #fff;
+  color: #333;
+  padding: 10px 30px;
+  margin-top: 30px;
+  cursor: pointer;
+  border: 1px solid #fff;
+  transition: 300ms ease;
+}
+
+.fixed-content button:hover{
+  opacity: .5;
+}
+
+.contaier-before{
+  display: grid;
+  grid-template-columns: 1fr minmax(960px, 2fr) 1fr;
+  grid-template-areas: 
+    '.. banner-title ..'
+    '..cards-img..'
+    '..local-shop..';
+  ;
+}
+
+.banner-title{
+  padding: 30px 0;
+  grid-area: banner-title;
+}
+
+.cards-img{
+  grid-area: cards-img;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  text-align: center;
+}
+
+.cards-img p{
+  padding: 20px 0;
+}
+
+.cards-img button{
+  border-radius: 5px;
+  background: #EB5757;
+  border: 1px solid #EB5757;
+  padding: 10px 30px;
+  color: #fff;
+  cursor: pointer;
+  transition: 300ms ease;
+}
+
+.cards-img button:hover{
+  opacity: .8;
+}
+
+.local-shop{
+  position: relative;
+  grid-area: local-shop;
+  padding: 50px 0;
+  display: grid;
+  grid-template-columns: 1fr 5fr 1fr;
+  gap: 50px;
+  align-items: center;
+  height: 532px;
+}
+
+.local-shop div{
+  position: relative;
+  z-index: 1;
+  color: #fff;
+}
+
+.local-shop::before{
+  content: '';
+  position: absolute;
+  background: #333;
+  border-radius: 5px;
+  height: 532px;
+  right: 0;
+  width: 87%;
+}
+
+.footer{
+  background: #333;
+  display: grid;
+  color: #fff;
+  grid-template-columns: repeat(3,1fr);
+  height: 262px;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.social{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 20px;
+}
+
+.social a{
+  transition: 300ms ease;
+}
+
+.social a:hover{
+  opacity: .5;
+}
+
+.menu-btn{
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .nav-bar{
+    display: grid;
+    grid-template-columns: 3fr auto;
+    justify-content: space-between;
+  }
+
+  .menu-btn{
+    display: initial;
+  }
+
+  .menu{
+    position: fixed;
+    right: -100%;
+    z-index: 1000;
+    width: 20%;
+    height: 30%;
+    border-radius: 5px;
+    padding: 20px;
+    background: #EB5757;
+    top: 146px;
+    transition: 400ms ease-in-out;
+  }
+
+  .menu.active{
+    right: 0;
+  }
+
+  .menu ul{
+    display: block;
+  }
+
+  .nav-bar ul li + li{
+    margin-left: 0;
+  }
+
+  .shop{
+    text-align: center;
+  }
+
+  .body{
+    overflow-x: hidden;
+  }
+
+  .menu-btn{
+    background: #fff;
+    border-radius: 5px;
+    position: relative;
+    width: 50px;
+    height: 40px;
+    border: 1px solid #fff;
+  }
+
+  .menu-btn::before{
+    content: '';
+    position: absolute;
+    background: #333;
+    width: 60%;
+    height: 2px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 -7px 0 #333, 0 7px 0 #333;
+  }
+
+  .header{
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .cards-img{
+    gap: 10px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .contaier-after{
+    grid-template-columns: 100%;
+    grid-template-areas:
+      'about-cards'
+      'cards';
+  }
+
+  .contaier-before{
+    grid-template-columns: 100%;
+    grid-template-areas: 
+      'banner-title'
+      'cards-img'
+      'local-shop';
+    ;
+  }
+
+  .grid,
+  .cards,
+  .fixed,
+  .footer,
+  .cards-img,
+  .local-shop,
+  .about-cards{
+    display: block;
+    grid-template-columns: 100%;
+  }
+
+  h1{
+    font-size: 3.4rem;
+    margin-bottom: 20px;
+  }
+
+  p, a, button{
+    font-size: 1.2rem;
+  }
+
+  .header{
+    background-position-x: -920px;
+  }
+
+  .local-shop{
+    background: #333;
+    text-align: center;
+    height: auto;
+    margin-top: 30px;
+  }
+
+  .fixed-content{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 0 20px;
+  }
+
+  .cards-img div + div{
+    margin-top: 30px;
+  }
+  
+  .local-shop div{
+    padding: 30px;
+  }
+  .footer{
+    height: auto;
+  }
+  .social,.direitos{
+    padding: 20px 0;
+  }
+}

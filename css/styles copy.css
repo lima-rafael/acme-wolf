@@ -1,0 +1,184 @@
+html{
+  font-size: 10px;
+}
+a,
+li,
+ul,
+h1,
+h2,
+p,
+body,
+button,
+blockquote{
+  margin: 0;
+  padding: 0;
+}
+
+a{
+  text-decoration: none;
+}
+
+li{
+  list-style: none;
+}
+
+body {
+  font-family: 'Sen', Georgia, serif;
+  color: #333;
+}
+
+h1{
+  font-size: 6.2rem;
+}
+
+h2{
+  font-size: 4rem;
+}
+
+p,
+a,
+button{
+  font-size: 1.8rem;
+}
+
+.btn{
+  background: none;
+  padding: 10px 50px;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 5px;
+  border: 2px solid #fff;
+  transition: 300ms ease;
+}
+
+.btn-header:hover{
+  background: #EB5757;
+  border: 2px solid #EB5757;
+}
+
+.body{
+  display: grid;
+  grid-template-columns: 1fr minmax(960px, 3fr) 300px;
+  grid-template-areas: 
+    'nav-bar nav-bar nav-bar'
+    'header header header'
+    '.. contaier ..'
+    'footer footer footer';
+  ;
+}
+
+.nav-bar{
+  grid-area: nav-bar;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  background: #EB5757;
+  align-items: center;
+  padding: 20px 50px;
+}
+
+.nav-bar ul{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.nav-bar ul a{
+  padding: 10px 20px;
+  display: block;
+  color: #fff;
+  border-radius: 5px;
+  transition: .3s ease;
+}
+
+.nav-bar ul a:hover{
+  background: rgba(0, 0, 0, .5);
+}
+
+.nav-bar ul li + li{
+  margin-left: 10px;
+}
+
+.nav-bar .shop{
+  background: #333333;
+  padding-bottom: 5px;
+}
+
+.header{
+  padding: 20px 0;
+  background: url('../images/backgrounds/back-001.png') top center no-repeat;
+  height: 839px;
+  align-items: center;
+  display: grid;
+  grid-area: header;
+}
+
+.grid{
+  width: 100%;
+  max-width: 960px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: auto;
+  color: #fff;
+}
+
+.grid .btn{
+  margin-top: 30px;
+}
+
+.contaier{
+  grid-area: contaier;
+}
+
+.footer{
+  grid-area: footer;
+}
+.about-cards{
+  display: grid;
+  grid-template-columns: 1fr minmax(450px, 1fr);
+  align-items: center;
+  padding: 30px 0;
+}
+
+.cards{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.card{
+  width: 100%;
+  max-width: 310px;
+  height: 350px;
+  margin: 30px auto;
+  color: #fff;
+  border-radius: 5px;
+  display: grid;
+  grid-template-rows: 1fr 2fr;
+}
+
+.title{
+  text-align: center;
+}
+
+.pt-30{
+  padding-top: 30px;
+}
+
+.number{
+  padding: 20px 30px;
+}
+
+.card-1{
+  background: url('../images/backgrounds/back-003.svg') center no-repeat;
+}
+
+.card-2{
+  background: url('../images/backgrounds/back-004.svg') center no-repeat;
+}
+
+.card-3{
+  background: url('../images/backgrounds/back-005.svg') center no-repeat;
+}
+
+.fixed{ 
+  background: url('../images/backgrounds/back-002.png') center no-repeat;
+  background-size: cover;
+}
